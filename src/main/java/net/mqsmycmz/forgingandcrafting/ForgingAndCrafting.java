@@ -12,6 +12,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
+import net.mqsmycmz.forgingandcrafting.registry.ForgingAndCraftingItems;
+import net.mqsmycmz.forgingandcrafting.registry.ForgingAndCraftingTabs;
 import org.slf4j.Logger;
 
 import java.util.AbstractMap;
@@ -32,7 +34,10 @@ public class ForgingAndCrafting
     public ForgingAndCrafting()
     {
         MinecraftForge.EVENT_BUS.register(this);
+        ForgingAndCraftingTabs.load();
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ForgingAndCraftingItems.ITEMS.register(bus);
     }
 
     private static final String PROTOCOL_VERSION = "1";
