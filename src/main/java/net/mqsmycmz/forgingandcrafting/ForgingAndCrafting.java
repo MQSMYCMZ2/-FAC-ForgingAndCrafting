@@ -37,7 +37,7 @@ public class ForgingAndCrafting
         ForgingAndCraftingTabs.load();
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ForgingAndCraftingItems.ITEMS.register(bus);
+        ForgingAndCraftingItems.REGISTRY.register(bus);
     }
 
     private static final String PROTOCOL_VERSION = "1";
