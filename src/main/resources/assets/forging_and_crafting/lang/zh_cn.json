@@ -6,6 +6,9 @@
   "item.forging_and_crafting.copper_shovel": "铜铲",
   "item.forging_and_crafting.copper_star": "铜星",
   "item.forging_and_crafting.copper_sword": "铜剑",
-  "itemGroup.tabforging_and_crafting": "锻造与创造"
-
+  "itemGroup.tabforging_and_crafting": "锻造与创造",
+  "item.forging_and_crafting.copper_armor_helmet": "铜头盔",
+  "item.forging_and_crafting.copper_armor_chestplate": "铜胸甲",
+  "item.forging_and_crafting.copper_armor_leggings": "铜护腿",
+  "item.forging_and_crafting.copper_armor_boots": "铜靴子"
 }

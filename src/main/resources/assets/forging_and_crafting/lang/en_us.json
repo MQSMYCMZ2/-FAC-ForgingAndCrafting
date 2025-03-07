@@ -6,6 +6,9 @@
   "item.forging_and_crafting.copper_shovel": "Copper Shovel",
   "item.forging_and_crafting.copper_star": "Copper Star",
   "item.forging_and_crafting.copper_sword": "Copper Sword",
-  "itemGroup.tabforging_and_crafting": "Forging And Crafting"
-
+  "itemGroup.tabforging_and_crafting": "Forging And Crafting",
+  "item.forging_and_crafting.copper_armor_helmet": "Copper Helmet",
+  "item.forging_and_crafting.copper_armor_chestplate": "Copper Chestplate",
+  "item.forging_and_crafting.copper_armor_leggings": "Copper Leggings",
+  "item.forging_and_crafting.copper_armor_boots": "Copper Boots"
 }
