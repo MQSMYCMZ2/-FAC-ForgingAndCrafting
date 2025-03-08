@@ -20,5 +20,12 @@ public class ForgingAndCraftingItems {
     public static final RegistryObject<Item> COPPER_ARMOR_CHESTPLATE = REGISTRY.register("copper_armor_chestplate",  ()->new CopperArmorItem.Chestplate());
     public static final RegistryObject<Item> COPPER_ARMOR_LEGGINGS = REGISTRY.register("copper_armor_leggings",  ()->new CopperArmorItem.Leggings());
     public static final RegistryObject<Item> COPPER_ARMOR_BOOTS = REGISTRY.register("copper_armor_boots",  ()->new CopperArmorItem.Boots());
+    public static final RegistryObject<Item> DIAMOND_STAR = REGISTRY.register("diamond_star",  ()->new DiamondStarItem());
+    public static final RegistryObject<Item> DIAMOND_STAR_UPGRADE_AXE = REGISTRY.register("diamond_star_upgrade_axe",  ()->new DiamondStarUpgradeAxeItem());
+    public static final RegistryObject<Item> DIAMOND_STAR_UPGRADE_HOE = REGISTRY.register("diamond_star_upgrade_hoe",  ()->new DiamondStarUpgradeHoeItem());
+    public static final RegistryObject<Item> DIAMOND_UPGRADE = REGISTRY.register("diamond_upgrade",  ()->new DiamondUpgradeItem());
+    public static final RegistryObject<Item> DIAMOND_STAR_UPGRADE_SHOVEL = REGISTRY.register("diamond_star_upgrade_shovel",  ()->new DiamondStarUpgradeShovelItem());
+    public static final RegistryObject<Item> DIAMOND_STAR_UPGRADE_PICKAXE = REGISTRY.register("diamond_star_upgrade_pickaxe",  ()->new DiamondStarUpgradePickaxeItem());
+    public static final RegistryObject<Item> DIAMOND_STAR_UPGRADE_SWORD = REGISTRY.register("diamond_star_upgrade_sword",  ()->new DiamondStarUpgradeSwordItem());
 
 }

@@ -10,5 +10,12 @@
   "item.forging_and_crafting.copper_armor_helmet": "Copper Helmet",
   "item.forging_and_crafting.copper_armor_chestplate": "Copper Chestplate",
   "item.forging_and_crafting.copper_armor_leggings": "Copper Leggings",
-  "item.forging_and_crafting.copper_armor_boots": "Copper Boots"
+  "item.forging_and_crafting.copper_armor_boots": "Copper Boots",
+  "item.forging_and_crafting.diamond_star_upgrade_hoe": "Diamond Star Upgrade Hoe",
+  "item.forging_and_crafting.diamond_star_upgrade_pickaxe": "Diamond Star Upgrade Pickaxe",
+  "item.forging_and_crafting.diamond_star_upgrade_axe": "Diamond Star Upgrade Axe",
+  "item.forging_and_crafting.diamond_star_upgrade_sword": "Diamond Star Upgrade Sword",
+  "item.forging_and_crafting.diamond_star_upgrade_shovel": "Diamond Star Upgrade Shovel",
+  "item.forging_and_crafting.diamond_star_upgrade": "Diamond Star Upgrade",
+  "item.forging_and_crafting.diamond_star": "Diamond Star"
 }
