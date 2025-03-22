@@ -32,7 +32,7 @@ public abstract class CopperArmorItem extends ArmorItem {
 
             @Override
             public SoundEvent getEquipSound() {
-                return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("minecraft:item/armor/equip_generic"));
+                return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
             }
 
             @Override
@@ -57,29 +57,45 @@ public abstract class CopperArmorItem extends ArmorItem {
         }, slot, properties);
     }
 
-    @Override
-    public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-        return String.format(ARMOR_TEXTURE_PATH, slot == EquipmentSlot.LEGS? 2 : 1);
-    }
-
     public static class Helmet extends CopperArmorItem {
         public Helmet() {
             super(EquipmentSlot.HEAD, new Item.Properties().tab(ForgingAndCraftingTabs.TAB_FORGING_AND_CRAFTING));
         }
+
+        @Override
+        public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+            return "forging_and_crafting:textures/models/armor/copper_layer_1.png";
+        }
     }
+
     public static class Chestplate extends CopperArmorItem {
         public Chestplate() {
-            super(EquipmentSlot.HEAD, new Item.Properties().tab(ForgingAndCraftingTabs.TAB_FORGING_AND_CRAFTING));
+            super(EquipmentSlot.CHEST, new Item.Properties().tab(ForgingAndCraftingTabs.TAB_FORGING_AND_CRAFTING));
+        }
+
+        @Override
+        public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+            return "forging_and_crafting:textures/models/armor/copper_layer_1.png";
         }
     }
     public static class Leggings extends CopperArmorItem {
         public Leggings() {
-            super(EquipmentSlot.HEAD, new Item.Properties().tab(ForgingAndCraftingTabs.TAB_FORGING_AND_CRAFTING));
+            super(EquipmentSlot.LEGS, new Item.Properties().tab(ForgingAndCraftingTabs.TAB_FORGING_AND_CRAFTING));
+        }
+
+        @Override
+        public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+            return "forging_and_crafting:textures/models/armor/copper_layer_2.png";
         }
     }
     public static class Boots extends CopperArmorItem {
         public Boots() {
-            super(EquipmentSlot.HEAD, new Item.Properties().tab(ForgingAndCraftingTabs.TAB_FORGING_AND_CRAFTING));
+            super(EquipmentSlot.FEET, new Item.Properties().tab(ForgingAndCraftingTabs.TAB_FORGING_AND_CRAFTING));
+        }
+
+        @Override
+        public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
+            return "forging_and_crafting:textures/models/armor/copper_layer_1.png";
         }
     }
 }

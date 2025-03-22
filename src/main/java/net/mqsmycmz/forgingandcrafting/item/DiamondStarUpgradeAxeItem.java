@@ -1,6 +1,5 @@
 package net.mqsmycmz.forgingandcrafting.item;
 
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -53,10 +52,10 @@ public class DiamondStarUpgradeAxeItem extends AxeItem {
     public void inventoryTick(ItemStack itemStack, Level world, Entity entity, int slot, boolean selected) {
         super.inventoryTick(itemStack, world, entity, slot, selected);
         if (selected) {
-            if (entity instanceof LivingEntity _livEnt && !_livEnt.level.isClientSide()) {
-                ItemStack mainHandItem = _livEnt.getMainHandItem();
-                if (mainHandItem.getItem() == ForgingAndCraftingItems.DIAMOND_STAR_UPGRADE_AXE.get()) {
-                    _livEnt.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1000, 3));
+            if (entity instanceof LivingEntity livingEntity && !livingEntity.level.isClientSide()) {
+                ItemStack mainHandItem = livingEntity.getMainHandItem();
+                if (mainHandItem.getItem() == ForgingAndCraftingItems.GOLD_STAR_UPGRADE_PICKAXE.get()) {
+                    livingEntity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1000, 3));
                 }
             }
         }

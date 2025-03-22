@@ -4,7 +4,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.item.HoeItem;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
@@ -13,39 +13,39 @@ import net.minecraft.world.level.Level;
 import net.mqsmycmz.forgingandcrafting.registry.ForgingAndCraftingItems;
 import net.mqsmycmz.forgingandcrafting.registry.ForgingAndCraftingTabs;
 
-public class DiamondStarUpgradeShovelItem extends HoeItem {
-    public DiamondStarUpgradeShovelItem() {
+public class GoldStarUpgradeAxeItem extends AxeItem {
+    public GoldStarUpgradeAxeItem() {
         super(new Tier() {
             @Override
             public int getUses() {
-                return 6800;
+                return 4090;
             }
 
             @Override
             public float getSpeed() {
-                return 30f;
+                return 28f;
             }
 
             @Override
             public float getAttackDamageBonus() {
-                return 18f;
+                return 13f;
             }
 
             @Override
             public int getLevel() {
-                return 8;
+                return 6;
             }
 
             @Override
             public int getEnchantmentValue() {
-                return 30;
+                return 28;
             }
 
             @Override
             public Ingredient getRepairIngredient() {
-                return Ingredient.of(new ItemStack(ForgingAndCraftingItems.DIAMOND_STAR.get()));
+                return Ingredient.of(new ItemStack(ForgingAndCraftingItems.GOLD_STAR.get()));
             }
-        },0, 4f, new Item.Properties().tab(ForgingAndCraftingTabs.TAB_FORGING_AND_CRAFTING));
+        }, 1, 3f, new Item.Properties().tab(ForgingAndCraftingTabs.TAB_FORGING_AND_CRAFTING));
     }
 
     @Override
@@ -54,8 +54,8 @@ public class DiamondStarUpgradeShovelItem extends HoeItem {
         if (selected) {
             if (entity instanceof LivingEntity livingEntity && !livingEntity.level.isClientSide()) {
                 ItemStack mainHandItem = livingEntity.getMainHandItem();
-                if (mainHandItem.getItem() == ForgingAndCraftingItems.DIAMOND_STAR_UPGRADE_SHOVEL.get()) {
-                    livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1000, 1));
+                if (mainHandItem.getItem() == ForgingAndCraftingItems.DIAMOND_STAR_UPGRADE_AXE.get()) {
+                    livingEntity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1000, 3));
                 }
             }
         }

@@ -52,10 +52,10 @@ public class DiamondStarUpgradeHoeItem extends HoeItem {
     public void inventoryTick(ItemStack itemStack, Level world, Entity entity, int slot, boolean selected) {
         super.inventoryTick(itemStack, world, entity, slot, selected);
         if (selected) {
-            if (entity instanceof LivingEntity _livEnt && !_livEnt.level.isClientSide()) {
-                ItemStack mainHandItem = _livEnt.getMainHandItem();
+            if (entity instanceof LivingEntity livingEntity && !livingEntity.level.isClientSide()) {
+                ItemStack mainHandItem = livingEntity.getMainHandItem();
                 if (mainHandItem.getItem() == ForgingAndCraftingItems.DIAMOND_STAR_UPGRADE_HOE.get()) {
-                    _livEnt.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1000, 1));
+                    livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1000, 1));
                 }
             }
         }

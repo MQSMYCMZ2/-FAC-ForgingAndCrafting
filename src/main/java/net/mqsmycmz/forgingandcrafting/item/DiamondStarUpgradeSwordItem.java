@@ -52,10 +52,10 @@ public class DiamondStarUpgradeSwordItem extends PickaxeItem {
     public void inventoryTick(ItemStack itemStack, Level world, Entity entity, int slot, boolean selected) {
         super.inventoryTick(itemStack, world, entity, slot, selected);
         if (selected) {
-            if (entity instanceof LivingEntity _livEnt && !_livEnt.level.isClientSide()) {
-                ItemStack mainHandItem = _livEnt.getMainHandItem();
+            if (entity instanceof LivingEntity livingEntity && !livingEntity.level.isClientSide()) {
+                ItemStack mainHandItem = livingEntity.getMainHandItem();
                 if (mainHandItem.getItem() == ForgingAndCraftingItems.DIAMOND_STAR_UPGRADE_SWORD.get()) {
-                    _livEnt.addEffect(new MobEffectInstance(MobEffects.REGENERATION,1000, 3));
+                    livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION,1000, 3));
                 }
             }
         }

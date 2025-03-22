@@ -16,6 +16,17 @@
   "item.forging_and_crafting.diamond_star_upgrade_axe": "Diamond Star Upgrade Axe",
   "item.forging_and_crafting.diamond_star_upgrade_sword": "Diamond Star Upgrade Sword",
   "item.forging_and_crafting.diamond_star_upgrade_shovel": "Diamond Star Upgrade Shovel",
-  "item.forging_and_crafting.diamond_star_upgrade": "Diamond Star Upgrade",
-  "item.forging_and_crafting.diamond_star": "Diamond Star"
+  "item.forging_and_crafting.diamond_upgrade": "Diamond Star Upgrade",
+  "item.forging_and_crafting.diamond_star": "Diamond Star",
+  "item.forging_and_crafting.gold_star": "Gold Star",
+  "item.forging_and_crafting.gold_upgrade": "Gold Upgrade",
+  "item.forging_and_crafting.gold_star_upgrade_axe": "Gold Star Upgrade Axe",
+  "item.forging_and_crafting.gold_star_upgrade_pickaxe": "Gold Star Upgrade Pickaxe",
+  "item.forging_and_crafting.gold_star_upgrade_shovel": "Gold Star Upgrade Shovel",
+  "item.forging_and_crafting.gold_star_upgrade_sword": "Gold Star Upgrade Sword",
+  "item.forging_and_crafting.gold_star_upgrade_hoe": "Gold Star Upgrade Hoe"
+
+
+
+
 }
